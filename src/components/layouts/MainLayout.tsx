@@ -53,7 +53,16 @@ export function MainLayout({ children }: MainLayoutProps) {
   ]
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div
+      className="flex flex-col min-h-screen bg-background"
+      style={{
+        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://github.com/KurisuRakko/picx-images-hosting/raw/master/IMG_0439-up2x-denoise3x.54y7qeyqwk.webp')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+      }}
+    >
       <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
         <div className="container flex h-16 items-center justify-between py-4 px-4 sm:px-6">
           <div className="flex items-center gap-6 md:gap-10">
